@@ -1,6 +1,6 @@
 .btn {
-	--shadow-color: rgba(50, 50, 50, 0.4);
-	--shadow-color-hover: rgba(50, 50, 50, 0.3);
+	--shadow-color: rgba(100, 100, 100, 0.4);
+	--shadow-color-hover: rgba(100, 100, 100, 0.3);
 	--shadow: 0 4px 4px var(--shadow-color);
 	--shadow-hover: 0 2px 4px var(--shadow-color-hover);
 	--btn-color: var(--default);
@@ -11,7 +11,7 @@
 	color: var(--btn-text-color);
 	border: 0;
 	line-height: 40px;
-	margin: 2px 5px;
+	margin: 4px 5px;
 	font-size: 16px;
 	outline: none;
 	padding: 2px 15px;
@@ -35,4 +35,30 @@
 	--btn-text-hover-color: var(--danger-text-hover);
 	--shadow-color: rgba(255, 0, 0, 0.4);
 	--shadow-color-hover: rgba(255, 0, 0, 0.3);
+}
+
+.btn-warning {
+	--btn-color: var(--warning);
+	--btn-text-color: var(--warning-text);
+	--btn-hover-color: var(--warning-hover);
+	--btn-text-hover-color: var(--warning-text-hover);
+	--shadow-color: rgba(201, 151, 12, 0.4);
+	--shadow-color-hover: rgba(201, 151, 12, 0.3);
+}
+.btn-success {
+	--btn-color: var(--success);
+	--btn-text-color: var(--success-text);
+	--btn-hover-color: var(--success-hover);
+	--btn-text-hover-color: var(--success-text-hover);
+	--shadow-color: rgba(56, 170, 56, 0.4);
+	--shadow-color-hover: rgba(56, 170, 56, 0.3);
+}
+
+.btn-info {
+	--btn-color: var(--info);
+	--btn-text-color: var(--info-text);
+	--btn-hover-color: var(--info-hover);
+	--btn-text-hover-color: var(--info-text-hover);
+	--shadow-color: rgba(0, 104, 184, 0.4);
+	--shadow-color-hover: rgba(0, 104, 184, 0.3);
 }

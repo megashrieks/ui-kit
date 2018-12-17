@@ -1,17 +1,33 @@
 .cui {
+	/*danger*/
 	--danger: rgb(230, 56, 56);
 	--danger-text: white;
 	--danger-hover: rgb(230, 76, 76);
 	--danger-text-hover: white;
-	--warning: orange;
+
+	/*warning*/
+	--warning: rgb(251, 201, 62);
 	--warning-text: black;
-	--success: green;
+	--warning-hover: rgb(255, 221, 82);
+	--warning-text-hover: black;
+
+	/* success */
+	--success: rgb(86, 200, 86);
 	--success-text: black;
-	--info: skyblue;
-	--info-text: black;
-	--default: #e5e5e5;
+	--success-hover: rgb(106, 230, 106);
+	--success-text-hover: black;
+
+	/* info */
+	--info: rgb(0, 124, 204);
+	--info-text: white;
+	--info-hover: rgb(20, 144, 224);
+	--info-text-hover: white;
+
+	/* default */
+	--default: #eee;
 	--default-text: #333;
-	--default-hover: #efefef;
+	--default-hover: #fafafa;
 	--default-text-hover: #333;
+
 	box-sizing: border-box;
 }
