@@ -1,0 +1,17 @@
+.cui {
+	--danger: rgb(230, 56, 56);
+	--danger-text: white;
+	--danger-hover: rgb(230, 76, 76);
+	--danger-text-hover: white;
+	--warning: orange;
+	--warning-text: black;
+	--success: green;
+	--success-text: black;
+	--info: skyblue;
+	--info-text: black;
+	--default: #e5e5e5;
+	--default-text: #333;
+	--default-hover: #efefef;
+	--default-text-hover: #333;
+	box-sizing: border-box;
+}
