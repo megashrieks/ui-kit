@@ -36,7 +36,11 @@
 	--shadow-color: rgba(255, 0, 0, 0.4);
 	--shadow-color-hover: rgba(255, 0, 0, 0.3);
 }
-
+.btn-flat.btn-danger {
+	--btn-text-color: var(--danger);
+	--btn-text-hover-color: var(--danger);
+	--shadow-color-hover: rgba(255, 0, 0, 0.4);
+}
 .btn-warning {
 	--btn-color: var(--warning);
 	--btn-text-color: var(--warning-text);
@@ -44,6 +48,11 @@
 	--btn-text-hover-color: var(--warning-text-hover);
 	--shadow-color: rgba(201, 151, 12, 0.4);
 	--shadow-color-hover: rgba(201, 151, 12, 0.3);
+}
+.btn-flat.btn-warning {
+	--btn-text-color: var(--warning);
+	--btn-text-hover-color: var(--warning);
+	--shadow-color-hover: rgba(201, 151, 12, 0.4);
 }
 .btn-success {
 	--btn-color: var(--success);
@@ -53,6 +62,11 @@
 	--shadow-color: rgba(56, 170, 56, 0.4);
 	--shadow-color-hover: rgba(56, 170, 56, 0.3);
 }
+.btn-flat.btn-success {
+	--btn-text-color: var(--success);
+	--btn-text-hover-color: var(--success);
+	--shadow-color-hover: rgba(56, 170, 56, 0.4);
+}
 
 .btn-info {
 	--btn-color: var(--info);
@@ -61,4 +75,16 @@
 	--btn-text-hover-color: var(--info-text-hover);
 	--shadow-color: rgba(0, 104, 184, 0.4);
 	--shadow-color-hover: rgba(0, 104, 184, 0.3);
+}
+.btn-flat.btn-info {
+	--btn-text-color: var(--info);
+	--btn-text-hover-color: var(--info);
+	--shadow-color-hover: rgba(0, 104, 184, 0.4);
+}
+
+.btn-flat {
+	font-weight: bold;
+	--btn-color: transparent;
+	--btn-hover-color: transparent;
+	--shadow-color: transparent;
 }

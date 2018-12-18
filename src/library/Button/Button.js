@@ -1,19 +1,15 @@
 import React, { Fragment } from "react";
 import "./Button.css";
 function Button(props) {
+	let btncolor = "";
+	let btntype = "";
+	if (props.color) btncolor = " btn-" + props.color;
+	if (props.variant) btntype = " btn-" + props.variant;
 	return (
 		<Fragment>
-			<button className="cui btn">{props.children}</button>
-			<button className="cui btn btn-danger">
-				{props.children} danger
+			<button className={"cui btn" + btncolor + btntype}>
+				{props.children}
 			</button>
-			<button className="cui btn btn-warning">
-				{props.children} warning
-			</button>
-			<button className="cui btn btn-success">
-				{props.children} success
-			</button>
-			<button className="cui btn btn-info">{props.children} info</button>
 		</Fragment>
 	);
 }

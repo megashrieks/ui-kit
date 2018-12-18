@@ -1,12 +1,12 @@
 import React, { Component } from "react";
+import ButtonDemo from "./ButtonDemo/ButtonDemo";
 import "./Usage.css";
-import { Button } from "../library";
 
 export default class Usage extends Component {
 	render() {
 		return (
 			<div className="centered">
-				<Button>something</Button>
+				<ButtonDemo />
 			</div>
 		);
 	}
