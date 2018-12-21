@@ -39,7 +39,7 @@
 .btn-flat.btn-danger {
 	--btn-text-color: var(--danger);
 	--btn-text-hover-color: var(--danger);
-	--shadow-color-hover: rgba(255, 0, 0, 0.4);
+	--shadow-color-hover: rgba(255, 0, 0, 0.5);
 }
 .btn-warning {
 	--btn-color: var(--warning);
@@ -52,7 +52,7 @@
 .btn-flat.btn-warning {
 	--btn-text-color: var(--warning);
 	--btn-text-hover-color: var(--warning);
-	--shadow-color-hover: rgba(201, 151, 12, 0.4);
+	--shadow-color-hover: rgba(201, 151, 12, 0.5);
 }
 .btn-success {
 	--btn-color: var(--success);
@@ -65,7 +65,7 @@
 .btn-flat.btn-success {
 	--btn-text-color: var(--success);
 	--btn-text-hover-color: var(--success);
-	--shadow-color-hover: rgba(56, 170, 56, 0.4);
+	--shadow-color-hover: rgba(56, 170, 56, 0.5);
 }
 
 .btn-info {
@@ -79,7 +79,7 @@
 .btn-flat.btn-info {
 	--btn-text-color: var(--info);
 	--btn-text-hover-color: var(--info);
-	--shadow-color-hover: rgba(0, 104, 184, 0.4);
+	--shadow-color-hover: rgba(0, 104, 184, 0.5);
 }
 
 .btn-flat {
@@ -87,4 +87,13 @@
 	--btn-color: transparent;
 	--btn-hover-color: transparent;
 	--shadow-color: transparent;
+}
+
+.btn:disabled {
+	cursor: not-allowed;
+	--shadow-color: transparent;
+	--shadow-color-hover: transparent;
+	--btn-color: #ddd;
+	--btn-text-color: #333;
+	font-weight: normal;
 }

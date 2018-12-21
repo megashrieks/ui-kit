@@ -1,3 +1,4 @@
 import "./colors.css";
 import Button from "./Button/Button";
-export { Button };
+import { CustomInput } from "./CustomInput/CustomInput";
+export { Button, CustomInput };
