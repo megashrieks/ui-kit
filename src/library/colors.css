@@ -18,9 +18,9 @@
 	--success-text-hover: black;
 
 	/* info */
-	--info: rgb(0, 124, 204);
+	--info: rgb(35, 105, 240);
 	--info-text: white;
-	--info-hover: rgb(20, 144, 224);
+	--info-hover: rgb(50, 117, 250);
 	--info-text-hover: white;
 
 	/* default */

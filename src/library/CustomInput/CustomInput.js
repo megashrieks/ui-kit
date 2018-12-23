@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./CustomeInput.css";
+import "./CustomInput.css";
 function inputHook(defaultvalue, changeWatcher, blurWatcher) {
 	const [value, setValue] = useState(defaultvalue);
 	return {
