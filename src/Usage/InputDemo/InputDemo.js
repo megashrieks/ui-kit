@@ -19,14 +19,6 @@ export default class InputDemo extends Component {
 					error={this.state.error}
 					errorMessage={"Error"}
 				/>
-				<CustomInput
-					label="Name"
-					defaultValue="abc"
-					watcher={this.checkNumber}
-					triggerOnChange={false}
-					error={this.state.error}
-					errorMessage={"Error"}
-				/>
 			</Fragment>
 		);
 	}

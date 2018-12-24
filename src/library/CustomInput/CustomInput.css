@@ -1,12 +1,11 @@
 .custom-input {
 	--border-color: #fff;
-	--shadow-color: rgba(0, 0, 0, 0.2);
-	--error-shadow: rgba(250, 56, 56, 0.2);
-	--error: rgb(250, 56, 56);
+	--shadow-color: rgba(0, 0, 0, 0.1);
+	--error-shadow: rgba(255, 106, 106, 0.2);
+	--error: rgb(255, 106, 106);
 	position: relative;
 	display: block;
 	box-shadow: 0 3px 10px var(--shadow-color);
-	padding-bottom: 5px;
 	border: 1px solid var(--border-color);
 	transition: 0.3s;
 	border-radius: 3px;
@@ -50,7 +49,7 @@
 .custom-input input:not([value=""]) + .label {
 	top: -6px;
 	left: 5px;
-	font-size: 10px;
+	font-size: 0.7em;
 	color: #000;
 	background: #fff;
 	width: auto;
@@ -64,12 +63,14 @@
 .custom-input.error .label {
 	border-left: 1px solid var(--error);
 	border-right: 1px solid var(--error);
+	color: var(--error);
 }
 .custom-input .error-message {
 	color: rgb(250, 56, 56);
 	opacity: 0;
 	font-size: 10px;
 	position: absolute;
+	margin-top: -5px;
 	margin-left: 6px;
 	background: #fff;
 	padding: 0 4px;
