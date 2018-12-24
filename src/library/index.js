@@ -1,4 +1,6 @@
 import "./colors.css";
-import Button from "./Button/Button";
+import "./global.css";
+import { Button, IconButton } from "./Button/Button";
 import { CustomInput } from "./CustomInput/CustomInput";
-export { Button, CustomInput };
+import { Modal } from "./Modal/Modal";
+export { Button, IconButton, CustomInput, Modal };
