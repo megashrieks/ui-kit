@@ -37,6 +37,7 @@ export default class ModalDemo extends Component {
 						header={"shrikanth is awesome"}
 						onClose={this.modalClose}
 						actions={actions}
+						size="medium"
 					>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 						sed do eiusmod tempor incididunt ut labore et dolore

@@ -5,9 +5,11 @@ import "./Modal.css";
 function ActionModal(props) {
 	let messagePadd = {};
 	if (!!!props.actions) messagePadd = { paddingBottom: "30px" };
+	let sizeclass = "";
+	if (props.size) sizeclass = " modal-" + props.size;
 	return (
 		<div className="modal-backdrop">
-			<div className="modal-body">
+			<div className={"modal-body" + sizeclass}>
 				<div
 					style={{
 						position: "absolute",

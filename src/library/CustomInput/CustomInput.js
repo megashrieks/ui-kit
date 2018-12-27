@@ -28,7 +28,7 @@ function CustomInput(props) {
 	var errorclass = !!props.error ? " error" : "";
 	return (
 		<label className={"custom-input" + errorclass}>
-			<input {...inputProps} />
+			<input {...inputProps} disabled={!!props.disabled} />
 			<div className="label">{props.label}</div>
 			<div className="error-message">{props.errorMessage}</div>
 		</label>
