@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Component } from "react";
 import "./CustomInput.css";
 function inputHook(defaultvalue, changeWatcher, blurWatcher) {
 	const [value, setValue] = useState(defaultvalue);
@@ -23,16 +23,34 @@ function watchHandler(props) {
 	return input;
 }
 
-function CustomInput(props) {
-	var inputProps = watchHandler(props);
-	var errorclass = !!props.error ? " error" : "";
-	return (
-		<label className={"custom-input" + errorclass}>
-			<input {...inputProps} disabled={!!props.disabled} />
-			<div className="label">{props.label}</div>
-			<div className="error-message">{props.errorMessage}</div>
-		</label>
-	);
+class CustomInput extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			value: this.props.defaultvalue,
+			onChange: this.change(
+				!!this.props.triggerOnChange ? this.props.watcher : () => {}
+			),
+			onBlur: this.change(
+				!!!this.props.triggerOnChange ? this.props.watcher : () => {}
+			)
+		};
+	}
+	change = fn => ({ target: { value } }) => {
+		this.setState({
+			value
+		});
+		fn(value);
+	};
+	render() {
+		var errorclass = !!this.props.error ? " error" : "";
+		return (
+			<label className={"custom-input" + errorclass}>
+				<input {...this.state} disabled={!!this.props.disabled} />
+				<div className="label">{this.props.label}</div>
+				<div className="error-message">{this.props.errorMessage}</div>
+			</label>
+		);
+	}
 }
-
 export { CustomInput };
